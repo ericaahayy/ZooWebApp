@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #e0e0e0;
+}
+header {
+  background-color: #006747; /* Navigation bar color set to #006747 */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  margin: 20px;
+  text-align: center;
+}
+.tab_btn {
+  background-color: #009a6a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #006747;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  height: 5rem;
+}
+.line {
+  height: 1px;
+  width: 75%;
+  background-color: white;
+  margin-left: 12.5%;
+}
+.dropdown-content a {
+  margin: auto 0;
+  font-size: 20px;
+  padding: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #a9c47f;
+}
+/* end of tab css */
+
+/* animal table style */
+.attraction_table_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 30vh;
+}
+.attraction_table {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+.attraction_table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.attraction_table th,
+.attraction_table td {
+  padding-inline: 2rem;
+}
+
+.btn {
+  width: 5rem;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit_btn {
+  background-color: #006747;
+  color: white;
+}
+.edit_btn:hover {
+  background-color: #009a6a;
+}
+.delete_btn {
+  background-color: rgb(179, 9, 9);
+  color: white;
+}
+.delete_btn:hover {
+  background-color: rgb(243, 88, 88);
+}
+/* form css */
+#aleart_success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #006747;
+  color: white;
+  padding-block: 0.7rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
+}
+.form_container {
+  max-width: 700px;
+  margin-top: 50px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  background-color: white;
+}
+.form_container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.form_container form .attraction_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .attraction_info .input_box {
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2-20px);
+}
+.attraction_info .input_box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.attraction_info .input_box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+form button {
+  height: 45px;
+  margin-top: 100px;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  background-color: #006747;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+form button:hover {
+  background-color: #009a6a;
+}
+
+.fade_animate {
+  animation: fade 2s ease-in-out forwards;
+}
+
+@keyframes fade {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+span {
+  font-size: 14px;
+  font-weight: 500;
+}
+select {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* footer css */
+.footer_container {
+  display: flex;
+  justify-content: center;
+  background-color: #006747;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 25vh;
+}
+.footer_container .footer_items h2 {
+  color: #a9c47f;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.footer_container .footer_items p {
+  font-size: 14px;
+  color: white;
+  margin-top: 0;
+  /* text-decoration: underline; */
+}
+.footer_container .footer_items a {
+  color: #a9c47f;
+}
+.footer_container .footer_items .about-us {
+  text-decoration: none;
+}
+.footer_container .footer_items .about-us:hover {
+  text-decoration: underline;
+}
+.footer_container .footer_items {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.footer_container .footer_items i {
+  margin-top: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.footer_container .footer_items i:hover {
+  color: #a9c47f;
+}

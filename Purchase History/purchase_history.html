@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purchase history</title>
+    <link rel="stylesheet" href="purchase_history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="/Main/main.html" class="logo">zoo</a>
+        <nav class="navigation">
+            <a href="/Animals/animals.html" class="b">Animals</a>
+            <a href="/Attractions/attractions.html" class="b">Attractions</a>
+            <a href="/Gift Shop/file.html" class="b">Shop</a>
+            <a href="/Membership/membership.html" class="b">Membership</a>
+            <a href="/Calendar/calendar.html" class="b">Tickets</a>
+            <!-- <a href="#" class="b"><ion-icon name="cart"></ion-icon></a> -->
+            <a href="/Login/login.html" class="b" id="login_btn">Login</a>
+            <div class="hamburger" id="user_icon" hidden>
+                <div class="nav_user" onclick="drop_down()">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="nav_user_dropdown" id="nav_user_dropdown" hidden>
+                    <ul>
+                        <!-- <a href="/Profile/profile.html">Profile</a> -->
+                        <a href="/Purchase History/purchase_history.html">History</a>
+                        <a href="../tickets/ticket.html">Your Tickets</a>
+                        <a href="/Login/login.html" onclick="log_out()">Logout</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="ticket_history_container">
+        <h1>Purchase History</h1>
+        <table class="ticket_table">
+            <thead>
+                <tr>
+                    <th>Purchase ID</th>
+                    <th>Purchase Date</th>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+    <div class="footer_container">
+        <div class="footer_items">
+            <h2><a href="#" class="about-us">About Us</a></h2>
+            <div class="social_media">
+                <a href="https://www.facebook.com/houstonzoo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer_items">
+            <h2>University of Houston</h2>
+            <p>4800 Calhoun Rd.</p>
+            <p>Houston, TX</p>
+        </div>
+        <div class="footer_items">
+            <h2>Team Members:</h2>
+            <p>Viet Pham</p>
+            <p>Khuong Ngo</p>
+            <p>Erica Hay</p>
+            <p>Kenia Benitez</p>
+            <p>Nicole Ospina</p>
+            <p>Ryan De Luna</p>
+        </div>
+    </div>
+</footer>
+<script src="../Main/main.js"></script>
+<script src="purchase_history.js"></script>
+
+</html>

@@ -1,0 +1,147 @@
+/* end of tab css */
+
+/* animal table style */
+.animal_table_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 30vh;
+}
+.animal_table {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+.animal_table,
+th,
+td {
+  border: 2px solid #e0e0e0;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+.animal_table th,
+.animal_table td {
+  padding-inline: 2rem;
+}
+
+.btn {
+  width: 5rem;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit_btn {
+  background-color: #006747;
+  color: white;
+}
+.edit_btn:hover {
+  background-color: #009a6a;
+}
+.delete_btn {
+  background-color: rgb(179, 9, 9);
+  color: white;
+}
+.delete_btn:hover {
+  background-color: rgb(243, 88, 88);
+}
+/* form css */
+#aleart_success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #006747;
+  color: white;
+  padding-block: 0.7rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
+}
+.form_container {
+  width: 700px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  background-color: white;
+}
+.form_container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.form_container form .animal_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+form .animal_info .input_box {
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2-20px);
+}
+.animal_info .input_box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.animal_info .input_box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+form button {
+  height: 45px;
+  margin-top: 110px;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  background-color: #006747;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+form button:hover {
+  background-color: #009a6a;
+}
+
+.fade_animate {
+  animation: fade 2s ease-in-out forwards;
+}
+
+@keyframes fade {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+span {
+  font-size: 14px;
+  font-weight: 500;
+}
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+select {
+  width: 110px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.animal_table_image {
+  width: 8rem;
+  height: 6rem;
+  object-fit: cover;
+}

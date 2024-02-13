@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="employees.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header_N_nav.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Employee Management</h1>
+        <div class="logout_container">
+            <a href="/Login/login.html" onclick="log_out()">Log Out</a>
+        </div>
+    </header>
+    <div class="main_container">
+        <div class="container">
+            <div class="dropdown">
+                <button class="tab_btn" title="Animals">Animals</button>
+                <div class="dropdown-content">
+                    <a href="Animals.html">Manage Animals</a>
+                    <div class="line"></div>
+                    <a href="enclosurereport.html">Enclosure Report</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="tab_btn2" title="Employees">Employees</button>
+                <div class="dropdown-content">
+                    <a href="employees.html">Manage Employees</a>
+                    <div class="line"></div>
+                    <a href="employeesreport.html">Employee Report</a>
+                </div>
+            </div>
+            <a href="attractions.html"><button class="tab_btn">Attractions</button></a>
+            <a href="Revenue_report.html"><button class="tab_btn">Revenue Report</button></a>
+            <a href="shop_inventory.html"><button class="tab_btn">Shop Inventory</button></a>
+        </div>
+        <main>
+            <section class="form_sec" id="input_form">
+                <div class="form_container">
+                    <div class="title" id="form-title">Add Employee
+
+                        <div id="aleart_success" hidden>Employee added successfully!</div>
+                    </div>
+                    <form id="employee_info_form">
+                        <div class="employee_info">
+                            <div class="input_box">
+                                <label for="employee_fname"> First Name:</label>
+                                <input type="text" name="fname" id="fname_name" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="employee_lname"> Last Name:</label>
+                                <input type="text" name="lname" id="lname_name" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="ssn"> Social Security Number:</label>
+                                <input type="text" name="ssn" id="ssn" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="dob"> Date of Birth:</label>
+                                <input type="text" name="dob" id="dob" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="e_gender">Gender:</label>
+                                <select name="e_gender" id="e_gender">
+                                    <option value="select">select</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                    <option value="N">Non-Binary</option>
+                                </select>
+                            </div>
+                            <div class="input_box">
+                                <label for="race">Race:</label>
+                                <select name="race" id="race">
+                                    <option value="select">select</option>
+                                    <option value="W">White</option>
+                                    <option value="A">Asian</option>
+                                    <option value="B">Black or African American</option>
+                                    <option value="P">Pacific Islander</option>
+                                    <option value="O">Unknown</option>
+                                </select>
+                            </div>
+                            <div class="input_box">
+                                <label for="address"> Address:</label>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="address"> Phone Number:</label>
+                                <input type="text" name="pnum" id="pnum" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="eid"> Employee ID:</label>
+                                <input type="text" name="eid" id="eid" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="department_num"> Department Number:</label>
+                                <select name="Department" id="dnum">
+                                    <option value="select">Select</option>
+                                    <option value="1">1 - Anthropod</option>
+                                    <option value="2">2 - Amphibian</option>
+                                    <option value="3">3 - Bird</option>
+                                    <option value="4">4 - Fish</option>
+                                    <option value="5">5 - Reptile</option>
+                                    <option value="6">6 - Mammal</option>
+                                </select>
+                            </div>
+                            <div class="input_box">
+                                <label for="salary"> Salary:</label>
+                                <input type="text" name="salary" id="salary" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="sdate"> Start Date:</label>
+                                <input type="text" name="sdate" id="sdate" required>
+                            </div>
+                            <button type="submit">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="form_sec" id="update_form" hidden>
+                <div class="form_container">
+                    <div class="title" id="form-title">Update Employee
+                        <div id="aleart_success" hidden>Employee updated successfully!</div>
+                    </div>
+                    <form id="employee_update_info_form">
+                        <div class="employee_info">
+                            <div class="input_box">
+                                <label for="employee_fname"> First Name:</label>
+                                <input type="text" name="fname" id="fname_name" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="employee_lname"> Last Name:</label>
+                                <input type="text" name="lname" id="lname_name" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="ssn"> Social Security Number:</label>
+                                <input type="text" name="ssn" id="ssn" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="dob"> Date of Birth:</label>
+                                <input type="text" name="dob" id="dob" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="e_gender">Gender:</label>
+                                <select name="e_gender" id="e_gender">
+                                    <option value="select">select</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                    <option value="N">Non-Binary</option>
+                                </select>
+                            </div>
+                            <div class="input_box">
+                                <label for="race">Race:</label>
+                                <select name="race" id="race">
+                                    <option value="select">select</option>
+                                    <option value="W">White</option>
+                                    <option value="A">Asian</option>
+                                    <option value="B">Black or African American</option>
+                                    <option value="P">Pacific Islander</option>
+                                    <option value="O">Unknown</option>
+                                </select>
+                            </div>
+                            <div class="input_box">
+                                <label for="address"> Address:</label>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="address"> Phone Number:</label>
+                                <input type="text" name="pnum" id="pnum" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="eid"> Employee ID:</label>
+                                <input type="text" name="eid" id="eid" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="department_num"> Department Number:</label>
+                                <select name="Department" id="dnum">
+                                    <option value="select">Select</option>
+                                    <option value="1">1 - Anthropod</option>
+                                    <option value="2">2 - Amphibian</option>
+                                    <option value="3">3 - Bird</option>
+                                    <option value="4">4 - Fish</option>
+                                    <option value="5">5 - Reptile</option>
+                                    <option value="6">6 - Mammal</option>
+                                </select>
+                            </div>
+                            <div class="input_box">
+                                <label for="salary"> Salary:</label>
+                                <input type="text" name="salary" id="salary" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="sdate"> Start Date:</label>
+                                <input type="text" name="sdate" id="sdate" required>
+                            </div>
+                            <button type="submit">Submit</button>
+                    </form>
+            </section>
+        </main>
+    </div>
+    <div class="employee_table_container">
+        <table class="employee_table">
+            <thead>
+                <th>Employee ID</th>
+                <th>Manager ID</th>
+                <th>Department</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Race</th>
+                <th>Date of Birth</th>
+                <th>SSN</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Start Date</th>
+                <th>Salary</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+    <div class="footer_container">
+        <div class="footer_items">
+            <h2><a href="#" class="about-us">About Us</a></h2>
+            <div class="social_media">
+                <a href="https://www.facebook.com/houstonzoo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer_items">
+            <h2>University of Houston</h2>
+            <p>4800 Calhoun Rd.</p>
+            <p>Houston, TX</p>
+        </div>
+        <div class="footer_items" id="team_mem">
+            <h2>Team Members:</h2>
+            <p>Viet Pham</p>
+            <p>Khuong Ngo</p>
+            <p>Erica Hay</p>
+            <p>Kenia Benitez</p>
+            <p>Nicole Ospina</p>
+            <p>Ryan De Luna</p>
+        </div>
+    </div>
+</footer>
+<script src="logout.js"></script>
+<script src="employees.js"></script>
+
+</html>

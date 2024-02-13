@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="enclosurereport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Enclosure Reports</h1>
+        <div class="logout_container">
+            <a href="/Login/login.html" onclick="log_out()">Log Out</a>
+        </div>
+    </header>
+    <div class="main_container">
+        <div class="container">
+            <div class="dropdown">
+                <button class="tab_btn" title="Animals">Animals</button>
+                <div class="dropdown-content">
+                    <a href="Animals.html">Manage Animals</a>
+                    <div class="line"></div>
+                    <a href="enclosurereport.html">Enclosure Report</a>
+                </div>
+            </div>
+            <a href="attractions.html"><button class="tab_btn">Attractions</button></a>
+            <a href="Revenue_report.html"><button class="tab_btn">Revenue Report</button></a>
+            <a href="shop_inventory.html"><button class="tab_btn">Shop Inventory</button></a>
+            <a href="employees.html"><button class="tab_btn">Employees</button></a>
+        </div>
+        <div class="enclosure_option">
+            <select name="enclosure_type" id="enclosure_type" onchange="show_report()">
+                <option value="all_enclosure">All Enclosure</option>
+                <option value="lion_habitat">Lion Habitat</option>
+                <option value="elephant_zone">Elephant Zone</option>
+                <option value="giraffe_exhibit">Giraffe Exhibit</option>
+                <option value="bird_aviary">Bird Aviary</option>
+                <option value="jungle_cat">Jungle Cat</option>
+            </select>
+        </div>
+        <section class="all_enclosure" id="all_enclosure">
+            <h2>All Enclosures</h2>
+            <div class="report_container">
+                <table class="animal_table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Enclosure Name</th>
+                        <th>capacity</th>
+                        <th>name list</th>
+                        <th>animal count</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="lion" id="lion_habitat" hidden>
+            <h2>Lion Habitat</h2>
+            <div class="report_container">
+                <table class="animal_table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Species</th>
+                        <th>Enclosures</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Weight <span>(lbs)</span></th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="elephant" id="elephant_zone" hidden>
+            <h2>Elephant Zone</h2>
+            <div class="report_container">
+                <table class="animal_table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Species</th>
+                        <th>Enclosures</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Weight <span>(lbs)</span></th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="giraffe" id="giraffe_exhibit" hidden>
+            <h2>Giraffe Exhibit</h2>
+            <div class="report_container">
+                <table class="animal_table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Species</th>
+                        <th>Enclosures</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Weight <span>(lbs)</span></th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="bird" id="bird_aviary" hidden>
+            <h2>Bird Aviary</h2>
+            <div class="report_container">
+                <table class="animal_table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Species</th>
+                        <th>Enclosures</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Weight <span>(lbs)</span></th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="tiger" id="jungle_cat" hidden>
+            <h2>jungle Cat</h2>
+            <div class="report_container">
+                <table class="animal_table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Species</th>
+                        <th>Enclosures</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Weight <span>(lbs)</span></th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+</body>
+<footer>
+    <div class="footer_container">
+        <div class="footer_items">
+            <h2><a href="#" class="about-us">About Us</a></h2>
+            <div class="social_media">
+                <a href="https://www.facebook.com/houstonzoo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer_items">
+            <h2>University of Houston</h2>
+            <p>4800 Calhoun Rd.</p>
+            <p>Houston, TX</p>
+        </div>
+        <div class="footer_items" id="team_mem">
+            <h2>Team Members:</h2>
+            <p>Viet Pham</p>
+            <p>Khuong Ngo</p>
+            <p>Erica Hay</p>
+            <p>Kenia Benitez</p>
+            <p>Nicole Ospina</p>
+            <p>Ryan De Luna</p>
+        </div>
+    </div>
+</footer>
+<script src="enclosurereport.js"></script>
+<script src="logout.js"></script>
+
+</html>

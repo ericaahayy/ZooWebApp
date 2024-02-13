@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile management</title>
+    <link rel="stylesheet" href="profile_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="/Main/main.html" class="logo">zoo</a>
+        <nav class="navigation">
+            <a href="/Animals/animals.html" class="b">Animals</a>
+            <a href="/Attractions/attractions.html" class="b">Attractions</a>
+            <a href="/Gift Shop/file.html" class="b">Shop</a>
+            <a href="/Membership/membership.html" class="b">Membership</a>
+            <a href="/Calendar/calendar.html" class="b">Tickets</a>
+            <!-- <a href="#" class="b"><ion-icon name="cart"></ion-icon></a> -->
+            <a href="/Login/login.html" class="b" id="login_btn">Login</a>
+            <div class="hamburger" id="user_icon" hidden>
+                <div class="nav_user" onclick="drop_down()">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="nav_user_dropdown" id="nav_user_dropdown" hidden>
+                    <ul>
+                        <a href="/Profile/profile.html">Profile</a>
+                        <a href="/Purchase History/purchase_history.html">History</a>
+                        <a href="#">Your Tickets</a>
+                        <a href="/Login/login.html" onclick="log_out()">Logout</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="profile_management_container">
+            <div class="profile_management_tabs">
+                <h2 class="title">Profile Management</h2>
+                <div class="bar"></div>
+                <div class="tab" id="personal_info_tab" onclick="showTab('personal_info_container')"><i
+                        class="fa-solid fa-user"></i>Personal Info</div>
+                <div class="tab" id="password_tab" onclick="showTab('password_reset')"><i
+                        class="fa-solid fa-key"></i>Password</div>
+            </div>
+            <div class="rightbox">
+                <div class="tab_content" id="personal_info_container">
+                    <h2 class="title">Personal Information</h2>
+                    <div class="bar"></div>
+                    <form action="#" method="POST">
+                        <div class="input_box">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" placeholder="First Name" maxlength="50" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" placeholder="Last Name" maxlength="50" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="address_1">Address 1</label>
+                            <input type="text" id="address_1" placeholder="123 street blv" maxlength="100" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="address_2">Address 2 <span>(optional)</span></label>
+                            <input type="text" id="address_2" placeholder="123 street blv" maxlength="100">
+                        </div>
+                        <div class="input_box">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Houston" maxlength="20" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="state">State</label>
+                            <select id="state" name="state" required>
+                                <option value="default">- select</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="input_box">
+                            <label for="zipcode">Zipcode</label>
+                            <input type="text" id="zipcode" placeholder="33333" maxlength="9" pattern="[0-9]{5,9}"
+                                required>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="SAVE">
+                        </div>
+                    </form>
+                </div>
+                <div class="tab_content" id="password_reset">
+                    <h2 class="title">Reset Your Password</h2>
+                    <div class="bar"></div>
+                    <form action="#" method="POST">
+                        <div class="input_box">
+                            <label for="current_password">Current Password</label>
+                            <input type="password" id="current_password" placeholder="Current Password" minlength="14"
+                                maxlength="16" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!])[A-Za-z\d@#$%^&+=!]{8,}$"
+                                required>
+                        </div>
+                        <div class="input_box">
+                            <label for="new_password">New Password</label>
+                            <input type="password" id="new_password" placeholder="New Password" minlength="14"
+                                maxlength="16" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!])[A-Za-z\d@#$%^&+=!]{8,}$"
+                                required>
+                        </div>
+                        <div class="input_box">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password" placeholder="Confirm Password" minlength="14"
+                                maxlength="16" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&+=!])[A-Za-z\d@#$%^&+=!]{8,}$"
+                                required>
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="SAVE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function showTab(tabID) {
+            let tabs = document.querySelectorAll(".tab_content");
+            tabs.forEach(function (tab) {
+                tab.style.display = "none";
+            });
+            let tabContent = document.getElementById(tabID);
+            if (tabContent) {
+                tabContent.style.display = "block";
+            }
+        }
+        showTab("personal_info_container");
+    </script>
+    <script src="../Main/main.js"></script>
+</body>
+<footer>
+    <div class="footer_container">
+        <div class="footer_items">
+            <h2><a href="#" class="about-us">About Us</a></h2>
+            <div class="social_media">
+                <a href="https://www.facebook.com/houstonzoo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer_items">
+            <h2>University of Houston</h2>
+            <p>4800 Calhoun Rd.</p>
+            <p>Houston, TX</p>
+        </div>
+        <div class="footer_items">
+            <h2>Team Members:</h2>
+            <p>Viet Pham</p>
+            <p>Khuong Ngo</p>
+            <p>Erica Hay</p>
+            <p>Kenia Benitez</p>
+            <p>Nicole Ospina</p>
+            <p>Ryan De Luna</p>
+        </div>
+    </div>
+</footer>
+
+</html>

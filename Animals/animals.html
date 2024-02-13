@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Animals Webpage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="animals.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <a href="/Main/main.html" class="logo">zoo</a>
+    <nav class="navigation">
+      <a href="/Animals/animals.html" class="b">Animals</a>
+      <a href="/Attractions/attractions.html" class="b">Attractions</a>
+      <a href="/Gift Shop/file.html" class="b">Shop</a>
+      <a href="/Membership/membership.html" class="b">Membership</a>
+      <a href="/Calendar/calendar.html" class="b">Tickets</a>
+      <!-- <a href="#" class="b"><ion-icon name="cart"></ion-icon></a> -->
+      <a href="/Login/login.html" class="b" id="login_btn">Login</a>
+      <div class="hamburger" id="user_icon" hidden>
+        <div class="nav_user" onclick="drop_down()">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="nav_user_dropdown" id="nav_user_dropdown" hidden>
+          <ul>
+            <a href="/Purchase History/purchase_history.html">History</a>
+            <a href="../tickets/ticket.html">Your Tickets</a>
+            <a href="/Login/login.html" onclick="log_out()">Logout</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="header2">
+    <h1>Meet the Animals at the Zoo!</h1>
+    <p>Click on the cards to view more information about the animals.</p>
+    <div class="filter-container">
+      <!-- filter by species -->
+      <label for="speciesFilter"></label>
+      <select id="speciesFilter">
+        <option value="all">All Animals</option>
+        <option value="amphibian">Amphibians</option>
+        <option value="reptile">Reptiles</option>
+        <option value="fish">Fish</option>
+        <option value="bird">Birds</option>
+        <option value="mammal">Mammals</option>
+        <option value="anthropod">Anthropods</option>
+      </select>
+    </div>
+  </div>
+  <div class="animal-cards">
+    <!-- AMPHIBIAN CARDS START -->
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/desert/canyon.jpeg" alt="Canyon Tree Frog" />
+      <h3>Canyon Tree Frog</h3>
+    </div>
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/desert/colorado.jpeg" alt="Colorado River Toad" />
+      <h3>Colorado River Toad</h3>
+    </div>
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/trainforest/glass.jpeg" alt="Glass Frog" />
+      <h3>Glass Frog</h3>
+    </div>
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/trainforest/pdfrog.jpeg" alt="Poison Dart Frog" />
+      <h3>Poison Dart Frog</h3>
+    </div>
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/trainforest/refrog.jpeg" alt="Red-Eyed Tree Frog" />
+      <h3>Red-Eyed Tree Frog</h3>
+    </div>
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/wetland/abfrog.webp" alt="American Bullfrog" />
+      <h3>American Bullfrog</h3>
+    </div>
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/wetland/newt.jpeg" alt="Eastern Newt" />
+      <h3>Eastern Newt</h3>
+    </div>
+    <div class="animal-card amphibian">
+      <img src="images/amphibians/wetland/salamander.webp" alt="Marbled Salamander" />
+      <h3>Marbled Salamander</h3>
+    </div>
+    <!-- AMPHIBIAN CARDS END -->
+    <!-- REPTILE CARDS START -->
+    <div class="animal-card reptile">
+      <img src="images/reptiles/croc/american.webp" alt="American Alligator" />
+      <h3>American Alligator</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/croc/nilecrocadile.jpeg" alt="Nile Crocadile" />
+      <h3>Nile Crocadile</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/croc/salt.jpeg" alt="Saltwater Crocadile" />
+      <h3>Saltwater Crocadile</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/desert/gila.jpeg" alt="Gila Monster" />
+      <h3>Gila Monster</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/desert/liz.jpeg" alt="Horned Lizard" />
+      <h3>Horned Lizard</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/desert/tort.jpg" alt="Desert Tortoise" />
+      <h3>Desert Tortoise</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/monitor/kdragon.jpeg" alt="Komodo Dragon" />
+      <h3>Komodo Dragon</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/monitor/nile.webp" alt="Nile Monitor" />
+      <h3>Nile Monitor</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/turtle/gtortoise.jpeg" alt="Galápagos Tortoise" />
+      <h3>Galápagos Tortoise</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/turtle/snap.jpeg" alt="Snapping Turtle" />
+      <h3>Snapping Turtle</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/turtle/soft.jpeg" alt="Spiny Softshell Turtle" />
+      <h3>Spiny Softshell Turtle</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/rainforest/ana.jpeg" alt="Green Anaconda" />
+      <h3>Green Anaconda</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/rainforest/boacon.webp" alt="Boa Constrictor" />
+      <h3>Boa Constrictor</h3>
+    </div>
+    <div class="animal-card reptile">
+      <img src="images/reptiles/rainforest/giguana.jpeg" alt="Green Iguana" />
+      <h3>Green Iguana</h3>
+    </div>
+    <!-- REPTILE CARDS END -->
+    <!-- FISH CARDS START -->
+    <div class="animal-card fish">
+      <img src="images/fish/amazon/eel.jpeg" alt="ELectric Eel" />
+      <h3>ELectric Eel</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/amazon/pacu.jpeg" alt="Red-Bellied Pacu" />
+      <h3>Red-Bellied Pacu</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/amazon/piranha.jpeg" alt="Piranha" />
+      <h3>Piranha</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/freshwater/cat.webp" alt="Redtail Catfish" />
+      <h3>Redtail Catfish</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/freshwater/sun.jpeg" alt="Sunfish" />
+      <h3>Pumpkin Sunfish</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/freshwater/trout.jpeg" alt="Rainbow Trout" />
+      <h3>Rainbow Trout</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/tropical/bluetang.jpeg" alt="Blue Tang" />
+      <h3>Blue Tang</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/tropical/clown.jpeg" alt="Clown Fish" />
+      <h3>Clown Fish</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/tropical/moorish.webp" alt="Moorish Idol" />
+      <h3>Moorish Idol</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/jellyfish/box.webp" alt="Box Jellyfish" />
+      <h3>Box Jellyfish</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/jellyfish/lions.webp" alt="Lion's Mane Jellyfish" />
+      <h3>Lion's Mane Jellyfish</h3>
+    </div>
+    <div class="animal-card fish">
+      <img src="images/fish/jellyfish/moon.png" alt="Moon Jellyfish" />
+      <h3>Moon Jellyfish</h3>
+    </div>
+    <!-- FISH CARDS END -->
+    <!-- BIRD CARDS START -->
+    <div class="animal-card bird">
+      <img src="images/birds/penguin/emp.jpeg" alt="Emperor Penguin" />
+      <h3>Emperor Penguin</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/penguin/gentoo.jpeg" alt="Gentoo Penguin" />
+      <h3>Gentoo Penguin</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/penguin/lblue.jpeg" alt="Little Blue Penguin" />
+      <h3>Little Blue Penguin</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/prey/baldeagle.jpeg" alt="Bald Eagle" />
+      <h3>Bald Eagle</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/prey/falcon.webp" alt="Peregrine Falcon" />
+      <h3>Peregrine Falcon</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/prey/rthawk.jpeg" alt="Red-Tailed Hawk" />
+      <h3>Red-Tailed Hawk</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/trainforest/macaw.jpeg" alt="Scarlet Macaw" />
+      <h3>Scarlet Macaw</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/trainforest/quetzal.jpeg" alt="Golden-Headed Quetzal" />
+      <h3>Golden-Headed Quetzal</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/trainforest/toucan.jpeg" alt="Toucan" />
+      <h3>Toucan</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/wetland/duck.jpeg" alt="Wood Duck" />
+      <h3>Wood Duck</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/wetland/egret.jpeg" alt="great egret" />
+      <h3>Great Egret</h3>
+    </div>
+    <div class="animal-card bird">
+      <img src="images/birds/wetland/flamingo.jpeg" alt="flamingo" />
+      <h3>Flamingo</h3>
+    </div>
+    <!-- BIRD CARDS END -->
+    <!-- MAMMAL CARDS START -->
+    <div class="animal-card mammal">
+      <img src="images/mammals/africansav/lion.jpeg" alt="lion" />
+      <h3>African Lion</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/africansav/elephant.jpeg" alt="elephant" />
+      <h3>African Elephant</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/africansav/giraffe.jpeg" alt="giraffe" />
+      <h3>Giraffe</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/primate/chimp.jpeg" alt="chimp" />
+      <h3>Chimpanzee</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/primate/lemur.jpeg" alt="Red-Ruffed Lemur" />
+      <h3>Red-Ruffed Lemur</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/primate/gorilla.jpeg" alt="gorilla" />
+      <h3>Gorilla</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/arctic/fox.jpeg" alt="fox" />
+      <h3>Arctic Fox</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/arctic/hare.jpeg" alt="hare" />
+      <h3>Arctic Hare</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/arctic/polarbear.webp" alt="polarbear" />
+      <h3>Polarbear</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/rainforest/capy.jpeg" alt="capybara" />
+      <h3>Capybara</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/rainforest/tiger.jpeg" alt="tiger" />
+      <h3>Bengal Tiger</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/rainforest/panda.jpeg" alt="panda" />
+      <h3>Red Panda</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/australian/kang.jpeg" alt="kangaroo" />
+      <h3>Kangaroo</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/australian/koala.jpeg" alt="koala" />
+      <h3>Koala</h3>
+    </div>
+    <div class="animal-card mammal">
+      <img src="images/mammals/australian/platypus.jpeg" alt="platypus" />
+      <h3>Platypus</h3>
+    </div>
+    <!-- MAMMAL CARDS END -->
+    <!-- ANTHROPOD CARDS START -->
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/crustaceans/crab.jpeg" alt="crab" />
+      <h3>Red King Crab</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/crustaceans/lobster.png" alt="lobster" />
+      <h3>Blue American Lobster</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/crustaceans/shrimp.png" alt="shrimp" />
+      <h3>Peacock Mantis Shrimp</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/spider/brec.jpeg" alt="recluse" />
+      <h3>Brown Recluse</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/spider/tarantula.jpeg" alt="tarantula" />
+      <h3>Tarantula</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/spider/bwidow.jpeg" alt="widow" />
+      <h3>Black Widow</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/insect/bee.jpeg" alt="bee" />
+      <h3>Honey Bee</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/insect/bfly.png" alt="butterfky" />
+      <h3>Monarch Butterfly</h3>
+    </div>
+    <div class="animal-card anthropod">
+      <img src="images/anthropods/insect/prayingmantis.webp" alt="mantis" />
+      <h3>Praying Mantis</h3>
+    </div>
+    <!-- ANTHROPOD CARDS END -->
+  </div>
+
+  <div class="popup-container">
+    <!-- AMPHIBIAN CARDS START -->
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup1">&times;</span>
+        <h2>Canyon Tree Frog</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Hyla arenicolor
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Desert</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Females lay 100 or more eggs at a time, which are clear and
+          jellylike.
+        </p>
+      </div>
+    </div>
+    <div id="popup2" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup2">&times;</span>
+        <h2>Colorado River Toad</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Incilius alvarius
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Desert</p>
+        <h6>FUN FACT</h6>
+        <p>
+          It is 3-7 inches in length and is the largest native toad in the
+          United States.
+        </p>
+      </div>
+    </div>
+    <div id="popup3" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup3">&times;</span>
+        <h2>Glass Frog</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Centrolenidae
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>The glass frog can jump more than ten feet in one jump.</p>
+      </div>
+    </div>
+    <div id="popup4" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup4">&times;</span>
+        <h2>Poison Dart Frog</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Dendrobatidae
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The toxin in their poison is so strong that it can instantaneously
+          stop a human heart.
+        </p>
+      </div>
+    </div>
+    <div id="popup5" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup5">&times;</span>
+        <h2>Red-Eyed Tree Frog</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Agalychnis callidryas
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The red-eyed tree frog can jump up to twenty times its own body
+          length!
+        </p>
+      </div>
+    </div>
+    <div id="popup6" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup6">&times;</span>
+        <h2>American Bullfrog</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Lithobates catesbeianus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Wetlands</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The deep croaking noise of male bullfrogs can be heard a quarter
+          mile away!
+        </p>
+      </div>
+    </div>
+    <div id="popup7" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup7">&times;</span>
+        <h2>Eastern Newt</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Notophthalmus viridescens
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Wetlands</p>
+        <h6>FUN FACT</h6>
+        <p>
+          They have yellow or green-brown skin with red dots that signal their
+          slight toxicity. The eastern newt's appearance evolves throughout
+          its three distinct life stages: larvae, juvenile (or eft) and adult.
+        </p>
+      </div>
+    </div>
+    <div id="popup8" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup8">&times;</span>
+        <h2>Marbled Salamander</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Ambystoma opacum
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Wetlands</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The marbled salamander is the only member of the Ambystomatidae
+          family to breed on land and not in the water.
+        </p>
+      </div>
+    </div>
+    <!-- AMPHIBIAN CARDS END -->
+    <!-- REPTILE CARDS START -->
+    <div id="popup9" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup9">&times;</span>
+        <h2>American Alligator</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Alligator mississippiensis
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Crocadile Habitat</p>
+        <h6>FUN FACT</h6>
+        <p>
+          As an alligator's teeth are worn down, they are replaced. An
+          alligator can go through 3,000 teeth in a lifetime.
+        </p>
+      </div>
+    </div>
+    <div id="popup10" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup10">&times;</span>
+        <h2>Nile Crocadile</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Crocodylus niloticus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Crocadile Habitat</p>
+        <h6>FUN FACT</h6>
+        <p>
+          It's bite can exert a force eight times more powerful than that of a
+          great white shark and 15 times more than a Rottweiler's.
+        </p>
+      </div>
+    </div>
+    <div id="popup11" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup11">&times;</span>
+        <h2>Saltwater Crocadile</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Crocodylus porosus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Crocadile Habitat</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Saltwater crocodiles are the largest crocodile species in the world,
+          and the largest living reptile in the world.
+        </p>
+      </div>
+    </div>
+    <div id="popup12" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup12">&times;</span>
+        <h2>Gila Monster</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Heloderma suspectum
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Desert</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Gila monsters may hold onto a predator for more than ten minutes.
+          There is no antivenin for Gila bites.
+        </p>
+      </div>
+    </div>
+    <div id="popup13" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup13">&times;</span>
+        <h2>Horned Lizard</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Phrynosoma
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Desert</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The marbled salamander is the only member of the Ambystomatidae
+          family to breed on land and not in the water.
+        </p>
+      </div>
+    </div>
+    <div id="popup14" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup14">&times;</span>
+        <h2>Desert Tortoise</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Gopherus agassizii
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Desert</p>
+        <h6>FUN FACT</h6>
+        <p>
+          They spend much of their life in burrows and rock shelters in order
+          to regulate body temperature and reduce water loss.
+        </p>
+      </div>
+    </div>
+    <div id="popup15" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup15">&times;</span>
+        <h2>Komodo Dragon</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Varanus komodoensis
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Monitor Lizard Lair</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The Komodo dragon is the largest lizard living on Earth today,
+          growing up to 10 feet long and weighing 150 pounds or more.
+        </p>
+      </div>
+    </div>
+    <div id="popup16" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup16">&times;</span>
+        <h2>Nile Monitor</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Varanus niloticus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Monitor Lizard Lair</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Because they eat crocodile eggs, Nile monitors are often seen near
+          crocodile nesting sites.
+        </p>
+      </div>
+    </div>
+    <div id="popup17" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup17">&times;</span>
+        <h2>Galápagos Tortoise</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Chelonoidis niger
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Turle Bay</p>
+        <h6>FUN FACT</h6>
+        <p>The Galápagos Islands is named after them.</p>
+      </div>
+    </div>
+    <div id="popup18" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup18">&times;</span>
+        <h2>Snapping Turtle</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Chelydra serpentina
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Turtle Bay</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Snapping turtles are nocturnal and spend most of the time
+          underwater, lying on the bottom of the waterbody.
+        </p>
+      </div>
+    </div>
+    <div id="popup19" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup19">&times;</span>
+        <h2>Spiny Softshell Turtle</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Apalone spinifera
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Turtle Bay</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Mating is usually in June in deep water. The male will nudge the
+          female's head while swimming and there is lots of waving of large
+          webbed feet.
+        </p>
+      </div>
+    </div>
+    <div id="popup20" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup20">&times;</span>
+        <h2>Green Anaconda</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Eunectes murinus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Females are considerably larger than males. They can reach lengths
+          of 30 feet (9 meters), diameters of 12 inches (30.5 centimeters) and
+          can weigh 550 pounds (250 kilograms).
+        </p>
+      </div>
+    </div>
+    <div id="popup21" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup21">&times;</span>
+        <h2>Boa Constrictor</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Boa constrictor
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>After a large meal, a boa doesn't need to eat again for weeks.</p>
+      </div>
+    </div>
+    <div id="popup22" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup22">&times;</span>
+        <h2>Green Iguana</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Iguana iguana
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>They can detach their tails if caught and grow another.</p>
+      </div>
+    </div>
+    <!-- REPTILE CARDS END -->
+    <!-- FISH CARDS START -->
+    <div id="popup23" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup23">&times;</span>
+        <h2>Electric Eel</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Electrophorus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Amazon</p>
+        <h6>FUN FACT</h6>
+        <p>Electric eels communicate using low electric organ discharges..</p>
+      </div>
+    </div>
+    <div id="popup24" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup24">&times;</span>
+        <h2>Red-Bellied Pacu</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Piaractus brachypomus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Amazon</p>
+        <h6>FUN FACT</h6>
+        <p>
+          They are important scavengers in their Amazon River ecosystems, and
+          a large part of their diet comes from fins nipped from the tails of
+          larger fish.
+        </p>
+      </div>
+    </div>
+    <div id="popup25" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup25">&times;</span>
+        <h2>Piranha</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Pygocentrus nattereri
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Amazon</p>
+        <h6>FUN FACT</h6>
+        <p>We Don't Really Know When They Evolved.</p>
+      </div>
+    </div>
+    <div id="popup26" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup26">&times;</span>
+        <h2>Redtail Catfish</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Phractocephalus hemioliopterus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Freshwater</p>
+        <h6>FUN FACT</h6>
+        <p>Unlike other catfish, it is an active and aggressive predator.</p>
+      </div>
+    </div>
+    <div id="popup27" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup27">&times;</span>
+        <h2>Pumpkin Sunfish</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Lepomis gibbosus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Freshwater</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Female pumpkinseeds can produce 1,500 to 3,000 eggs, depending on
+          their size and age.
+        </p>
+      </div>
+    </div>
+    <div id="popup28" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup28">&times;</span>
+        <h2>Rainbow Trout</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Oncorhynchus mykiss
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Freshwater</p>
+        <h6>FUN FACT</h6>
+        <p>Their lifespan is four to six years in the wild.</p>
+      </div>
+    </div>
+    <div id="popup29" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup29">&times;</span>
+        <h2>Blue Tang</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Paracanthurus hepatus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Reef</p>
+        <h6>FUN FACT</h6>
+        <p>Dory from the "Finding Nemo" movies is a Blue Tang.</p>
+      </div>
+    </div>
+    <div id="popup30" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup30">&times;</span>
+        <h2>Clown Fish</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Amphiprioninae
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Reef</p>
+        <h6>FUN FACT</h6>
+        <p>Nemo from the "Finding Nemo" movies is a Clown fish.</p>
+      </div>
+    </div>
+    <div id="popup31" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup31">&times;</span>
+        <h2>Moorish Idol</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Zanclus cornutus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Reef</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Moorish idols are diurnal (active during the day) and may be seen
+          alone or in pairs, occasionally forming large schools.
+        </p>
+      </div>
+    </div>
+    <div id="popup32" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup32">&times;</span>
+        <h2>Box Jellyfish</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Chironex fleckeri
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Jellyfish Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Box jellies are highly advanced among jellyfish. They have developed
+          the ability to move rather than just drift, jetting at up to four
+          knots through the water.
+        </p>
+      </div>
+    </div>
+    <div id="popup33" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup33">&times;</span>
+        <h2>Lion's Mane Jellyfish</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Cyanea capillata
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Jellyfish Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The lion’s mane jellyfish is one of the largest jelly species in the
+          world, growing to an average length of 1.5 feet (40 cm), but can
+          reach lengths of 6.5 feet (200 cm).
+        </p>
+      </div>
+    </div>
+    <div id="popup34" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup34">&times;</span>
+        <h2>Moon Jellyfish</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Aurelia aurita
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Jellyfish Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Unlike most jellyfish, their tentacles are thin and short, extending
+          around the circumference of the bell.
+        </p>
+      </div>
+    </div>
+    <!-- FISH CARDS END -->
+    <!-- BIRD CARDS START -->
+    <div id="popup35" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup35">&times;</span>
+        <h2>Emperor Penguin</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Aptenodytes forster
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Penguin Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>Wild Emperor penguins are only found in Antarctica.</p>
+      </div>
+    </div>
+    <div id="popup36" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup36">&times;</span>
+        <h2>Gentoo Penguin</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Pygoscelis papua
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Penguin Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Gentoo penguins have been known to make as many as 450 dives per day
+          to forage for food.
+        </p>
+      </div>
+    </div>
+    <div id="popup37" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup37">&times;</span>
+        <h2>Little Blue Penguin</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Eudyptula minor
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Penguin Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          They are the smallest penguin in the world, weighing only just over
+          1kg and standing at only 25-35cm tall!
+        </p>
+      </div>
+    </div>
+    <div id="popup38" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup38">&times;</span>
+        <h2>Bald Eagle</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Haliaeetus leucocephalus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Birds of Prey Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The Bald Eagle has been the national emblem of the United States
+          since 1782 and a spiritual symbol for native people for far longer
+          than that.
+        </p>
+      </div>
+    </div>
+    <div id="popup39" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup39">&times;</span>
+        <h2>Peregrine Falcon</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Falco peregrinus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Birds of Prey Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          When they enter a hunting dive called a stoop, they can reach up to
+          200 to 240 miles per hour!
+        </p>
+      </div>
+    </div>
+    <div id="popup40" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup40">&times;</span>
+        <h2>Red-Tailed Hawk</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Buteo jamaicensis
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Birds of Prey Exhibit</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Red-tails are among the largest Buteo hawks in North America, second
+          only to the Ferruginous Hawk.
+        </p>
+      </div>
+    </div>
+    <div id="popup41" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup41">&times;</span>
+        <h2>Scarlet Macaw</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Ara macao
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Scarlet Macaws are Very Loyal and Romantic. These parrots are
+          monogamous which means they take just one mate for life.
+        </p>
+      </div>
+    </div>
+    <div id="popup42" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup42">&times;</span>
+        <h2>Golden-Headed Quetzal</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Pharomachrus auriceps
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>
+          It has a wingspan of 30–36 cm and a length of 33–36 cm with tail
+          plumes adding another 8–10 cm.
+        </p>
+      </div>
+    </div>
+    <div id="popup43" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup43">&times;</span>
+        <h2>Toucan</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Ramphastidae
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>Their bill (beak) accounts for half of their length.</p>
+      </div>
+    </div>
+    <div id="popup44" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup44">&times;</span>
+        <h2>Wood Duck</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Aix sponsa
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Wetlands</p>
+        <h6>FUN FACT</h6>
+        <p>
+          They are the only North American ducks that can produce two broods
+          in one season!
+        </p>
+      </div>
+    </div>
+    <div id="popup45" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup45">&times;</span>
+        <h2>Great Egret</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Ardea alba
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Wetlands</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Egrets are wading birds, closely related to herons with generally
+          long legs, necks, and bills, as well as short tails.
+        </p>
+      </div>
+    </div>
+    <div id="popup46" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup46">&times;</span>
+        <h2>Flamingo</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Phenicopterus ruber
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Wetlands</p>
+        <h6>FUN FACT</h6>
+        <p>Flamingos get their pink color from their food.</p>
+      </div>
+    </div>
+    <!-- BIRD CARDS END -->
+    <!-- MAMMAL CARDS START -->
+    <div id="popup47" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup47">&times;</span>
+        <h2>African Lion</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Panthera leo
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>African Savannah</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Male lions are much bigger than females and they have large manes,
+          or hair, which covers their head and neck and stretches underneath
+          to their belly.
+        </p>
+      </div>
+    </div>
+    <div id="popup48" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup48">&times;</span>
+        <h2>African Elephant</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Loxodonta
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>African Savannah</p>
+        <h6>FUN FACT</h6>
+        <p>
+          he African Savanna (Bush) elephant is the world's largest land
+          animal – with adult males, or bull elephants, standing up to 3m high
+          and weighing up to 6,000kg.
+        </p>
+      </div>
+    </div>
+    <div id="popup49" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup49">&times;</span>
+        <h2>Giraffe</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Giraffa
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>African Savannah</p>
+        <h6>FUN FACT</h6>
+        <p>Even newborn giraffe are taller than most humans.</p>
+      </div>
+    </div>
+    <div id="popup50" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup50">&times;</span>
+        <h2>Chimpanzee</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Pan troglodytes
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Primates</p>
+        <h6>FUN FACT</h6>
+        <p>We Share 95 to 98 Percent of the Same DNA with Chimpanzees.</p>
+      </div>
+    </div>
+    <div id="popup51" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup51">&times;</span>
+        <h2>Red-Ruffed Lemur</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Varecia rubra
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Primates</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Most of their coat is rusty red in color; however, fur on the
+          forehead, stomach, tail, and inside of limbs is black and there is a
+          white patch on the back of the neck.
+        </p>
+      </div>
+    </div>
+    <div id="popup52" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup52">&times;</span>
+        <h2>Gorilla</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Gorilla gorilla
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Primates</p>
+        <h6>FUN FACT</h6>
+        <p>Around 1,063 exist in the wild.</p>
+      </div>
+    </div>
+    <div id="popup53" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup53">&times;</span>
+        <h2>Arctic Fox</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Vulpes lagopus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Arctic Tundra</p>
+        <h6>FUN FACT</h6>
+        <p>There are 8 recognised subspecies of the Arctic fox.</p>
+      </div>
+    </div>
+    <div id="popup54" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup54">&times;</span>
+        <h2>Arctic Hare</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Lepus arcticus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Arctic Tundra</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Arctic Hares will dig holes under the snow or into the ground to
+          both keep warm and to sleep.
+        </p>
+      </div>
+    </div>
+    <div id="popup55" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup55">&times;</span>
+        <h2>Polarbear</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Ursus maritimus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Arctic Tundra</p>
+        <h6>FUN FACT</h6>
+        <p>A polar bear skin is actually black.</p>
+      </div>
+    </div>
+    <div id="popup56" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup56">&times;</span>
+        <h2>Capybara</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Hydrochoerus hydrochaeris
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The biggest rodent in the world, the semi-aquatic capybara spends
+          most of its time grazing or swimming in the nearest body of water.
+        </p>
+      </div>
+    </div>
+    <div id="popup57" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup57">&times;</span>
+        <h2>Bengal Tiger</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Panthera tigris tigris
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The Bengal Tiger has the lengthiest canine amongst various
+          carnivorous animals.
+        </p>
+      </div>
+    </div>
+    <div id="popup58" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup58">&times;</span>
+        <h2>Red Panda</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Ailurus fulgens
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Tropical Rainforest</p>
+        <h6>FUN FACT</h6>
+        <p>Red Pandas Glow in the Dark.</p>
+      </div>
+    </div>
+    <div id="popup59" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup59">&times;</span>
+        <h2>Kangaroo</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Macropus rufus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Australian Outback</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Kangaroos belong to the animal family Macropus, literally "big foot.
+        </p>
+      </div>
+    </div>
+    <div id="popup60" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup60">&times;</span>
+        <h2>Koala</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Phascolarctos cinereus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Australian Outback</p>
+        <h6>FUN FACT</h6>
+        <p>Koala means 'no drink'.</p>
+      </div>
+    </div>
+    <div id="popup61" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup61">&times;</span>
+        <h2>Platypus</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Ornithorhynchus anatinus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Australian Outback</p>
+        <h6>FUN FACT</h6>
+        <p>Platypuses are venomous.</p>
+      </div>
+    </div>
+    <!-- MAMMAL CARDS END -->
+    <!-- ANTHROPOD CARDS START -->
+    <div id="popup62" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup62">&times;</span>
+        <h2>Red King Crab</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Paralithodes camtschaticus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Crustaceans</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Red king crabs can grow to be very large, up to 24 pounds with a leg
+          span of 5 feet.
+        </p>
+      </div>
+    </div>
+    <div id="popup63" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup63">&times;</span>
+        <h2>Blue American Lobster</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Homarus americanus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Crustaceans</p>
+        <h6>FUN FACT</h6>
+        <p>
+          he blue coloration in lobsters is the result of a genetic anomaly.
+          Blue lobsters are very rare, occurring 1 in every 2 million.
+        </p>
+      </div>
+    </div>
+    <div id="popup64" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup64">&times;</span>
+        <h2>Peacock Mantis Shrimp</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Odontodactylus scyllarus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Crustaceans</p>
+        <h6>FUN FACT</h6>
+        <p>
+          The peacock mantis shrimp can kill prey larger than itself and
+          typically feeds on gastropods, crabs and mollusks.
+        </p>
+      </div>
+    </div>
+    <div id="popup65" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup65">&times;</span>
+        <h2>Brown Recluse</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Loxosceles reclusa
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Spider Sanctuary</p>
+        <h6>FUN FACT</h6>
+        <p>Brown recluse earns its name for its shy nature.</p>
+      </div>
+    </div>
+    <div id="popup66" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup66">&times;</span>
+        <h2>Tarantula</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Theraphosidae
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Spider Sanctuary</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Tarantulas range from the size of a fingernail to the size of a
+          dinner plate.
+        </p>
+      </div>
+    </div>
+    <div id="popup67" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup67">&times;</span>
+        <h2>Black Widow</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Latrodectus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Spider Sanctuary</p>
+        <h6>FUN FACT</h6>
+        <p>
+          Black widows are the most venomous spider in North America. Their
+          venom is about 15 times stronger than rattlesnake venom.
+        </p>
+      </div>
+    </div>
+    <div id="popup68" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup68">&times;</span>
+        <h2>Honey Bee</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Apis mellifera Linnaeus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Insects</p>
+        <h6>FUN FACT</h6>
+        <p>A honey bee can fly up to 15 miles per hour.</p>
+      </div>
+    </div>
+    <div id="popup69" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup69">&times;</span>
+        <h2>Monarch Butterfly</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Danaus plexippus
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Insects</p>
+        <h6>FUN FACT</h6>
+        <p>They're bright orange and poisonous.</p>
+      </div>
+    </div>
+    <div id="popup70" class="popup">
+      <div class="popup-content">
+        <span class="close" id="close-popup70">&times;</span>
+        <h2>Praying Mantis</h2>
+        <h6>SCIENTIFIC NAME</h6>
+        <p style="
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+              ">
+          Mantis religiosa
+        </p>
+        <h6>EXHIBIT</h6>
+        <p>Insects</p>
+        <h6>FUN FACT</h6>
+        <p>
+          hey Have Great Vision. Excellent vision helps ambush-hunting
+          mantises get a jump on their prey.
+        </p>
+      </div>
+    </div>
+    <!-- ANTHROPOD CARDS END -->
+  </div>
+</body>
+
+<footer>
+  <div class="footer_container">
+    <div class="footer_items">
+      <h2><a href="#" class="about-us">About Us</a></h2>
+      <div class="social_media">
+        <a href="https://www.facebook.com/houstonzoo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer_items">
+      <h2>University of Houston</h2>
+      <p>4800 Calhoun Rd.</p>
+      <p>Houston, TX</p>
+    </div>
+    <div class="footer_items">
+      <h2>Team Members:</h2>
+      <p>Viet Pham</p>
+      <p>Khuong Ngo</p>
+      <p>Erica Hay</p>
+      <p>Kenia Benitez</p>
+      <p>Nicole Ospina</p>
+      <p>Ryan De Luna</p>
+    </div>
+  </div>
+</footer>
+<script src="animals.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../Main/main.js"></script>
+
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #e0e0e0;
+}
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #006747;
+  position: relative;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0 auto;
+  color: white;
+}
+
+.logout_container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+}
+
+.logout_container a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.logout_container a:hover {
+  color: #a9c47f;
+}
+.container {
+  margin: 20px;
+  text-align: center;
+}
+.tab_btn {
+  background-color: #009a6a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #006747;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  height: 5rem;
+}
+.line {
+  height: 1px;
+  width: 75%;
+  background-color: white;
+  margin-left: 12.5%;
+}
+.dropdown-content a {
+  margin: auto 0;
+  font-size: 20px;
+  padding: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #a9c47f;
+}
+/* footer css */
+.footer_container {
+  display: flex;
+  justify-content: center;
+  background-color: #006747;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 25vh;
+}
+.footer_container .footer_items h2 {
+  color: #a9c47f;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.footer_container .footer_items p {
+  font-size: 14px;
+  color: white;
+  margin-top: 0;
+  /* text-decoration: underline; */
+}
+.footer_container .footer_items a {
+  color: #a9c47f;
+}
+.footer_container .footer_items .about-us {
+  text-decoration: none;
+}
+.footer_container .footer_items .about-us:hover {
+  text-decoration: underline;
+}
+.footer_container .footer_items {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.footer_container .footer_items i {
+  margin-top: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.footer_container .footer_items i:hover {
+  color: #a9c47f;
+}

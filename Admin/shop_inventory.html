@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop Management</title>
+    <link rel="stylesheet" href="shop_inventory.css">
+    <link rel="stylesheet" href="header_N_nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Shop Management</h1>
+        <div class="logout_container">
+            <a href="/Login/login.html" onclick="log_out()">Log Out</a>
+        </div>
+    </header>
+    <div class="main_container">
+        <div class="container">
+            <div class="dropdown">
+                <button class="tab_btn" title="Animals">Animals</button>
+                <div class="dropdown-content">
+                    <a href="Animals.html">Manage Animals</a>
+                    <div class="line"></div>
+                    <a href="enclosurereport.html">Enclosure Report</a>
+                </div>
+            </div>
+            <a href="attractions.html"><button class="tab_btn">Attractions</button></a>
+            <a href="Revenue_report.html"><button class="tab_btn">Revenue Report</button></a>
+            <a href="shop_inventory.html"><button class="tab_btn">Shop Inventory</button></a>
+            <a href="employees.html"><button class="tab_btn">Employees</button></a>
+        </div>
+        <main>
+            <section class="form_sec" id="input_form">
+                <div class="form_container">
+                    <div class="title" id="form-title">Add Item
+
+                        <div id="aleart_success" hidden>Item added successfully!</div>
+                    </div>
+                    <form id="item_info_form">
+                        <div class="animal_info">
+
+                            <div class="input_box">
+                                <label for="animal_image">Image: <span>(url)</span></label>
+                                <input type="text" name="image" pattern=".{1,300}" id="item_image" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="animal_name">Name:</label>
+                                <input type="text" name="name" id="item_name" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="animal_age">Quantity:</label>
+                                <input type="number" name="quantity" id="item_quantity" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="animal_weight">Price: <span>$</span></label>
+                                <input type="number" name="price" id="item_price" step="any" required>
+                            </div>
+                            <button type="submit">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="form_sec" id="update_form" hidden>
+                <div class="form_container">
+                    <div class="title" id="form-title">Update Item
+                        <div id="aleart_success" hidden>Item updated successfully!</div>
+                    </div>
+                    <form id="item_update_info_form">
+                        <div class="animal_info">
+                            <div class="input_box">
+                                <label for="animal_image">Image: <span>(url)</span></label>
+                                <input type="text" name="image" pattern=".{1,300}" id="item_image" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="animal_name">Name:</label>
+                                <input type="text" name="name" id="item_name" required>
+                            </div>
+                            <div class="input_box">
+                                <label for="animal_age">Quantity:</label>
+                                <input type="number" name="quantity" id="item_quantity" required>
+                            </div>
+
+                            <div class="input_box">
+                                <label for="animal_weight">Price: <span>$</span></label>
+                                <input type="number" name="price" id="item_price" step="any" required>
+                            </div>
+                            <button onclick="cancel_update()">Cancel</button>
+                            <button type="submit">Update</button>
+                        </div>
+                    </form>
+            </section>
+        </main>
+    </div>
+    <div class="animal_table_container">
+        <table class="animal_table">
+            <thead>
+                <th>Item ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+    <div class="footer_container">
+        <div class="footer_items">
+            <h2><a href="#" class="about-us">About Us</a></h2>
+            <div class="social_media">
+                <a href="https://www.facebook.com/houstonzoo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer_items">
+            <h2>University of Houston</h2>
+            <p>4800 Calhoun Rd.</p>
+            <p>Houston, TX</p>
+        </div>
+        <div class="footer_items" id="team_mem">
+            <h2>Team Members:</h2>
+            <p>Viet Pham</p>
+            <p>Khuong Ngo</p>
+            <p>Erica Hay</p>
+            <p>Kenia Benitez</p>
+            <p>Nicole Ospina</p>
+            <p>Ryan De Luna</p>
+        </div>
+    </div>
+</footer>
+<script src="logout.js"></script>
+<script src="shop_inventory.js"></script>
+
+</html>
