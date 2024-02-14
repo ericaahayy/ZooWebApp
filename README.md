@@ -1,6 +1,6 @@
 ````````````````
 Zoo Web Application
-The original repository for the project has been deleted & is no longer being hosted on the server.
+The original repository for the project has been deleted & is no longer being hosted on the server. The web application can be visited through my website: https://ericahay.com
 
 Collaborators:
 Ryan De Luna
